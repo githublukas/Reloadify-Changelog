@@ -30,18 +30,52 @@ Bisher war nach dem Versand eines Newsletters nur ein kurzes Popup und ein Statu
 
 ---
 
-## Dynamische Produktfeeds, Bildskalierung & mehr {{ date: '2026-01-12T00:00Z' }}
+## Dynamische Produktfeeds {{ date: '2026-01-12T00:00Z' }}
 
-Ein umfangreiches Update zum Start des neuen Jahres. Mit dynamischen Produktfeeds fuegen Sie im Handumdrehen personalisierte Inhalte zu Ihren E-Mails hinzu, basierend auf dem tatsaechlichen Kundenverhalten - zuerst bestellt, zuletzt bestellt, alle Bestellungen oder Cross-Sell-Produkte. Kein Herumprobieren mehr mit Liquid-Code. Darueber hinaus werden Produktbilder jetzt automatisch skaliert fuer ein einheitliches Erscheinungsbild in jedem Posteingang, Sie sehen Segmentzugehoerigkeiten direkt auf der Profilseite, und die neue "Testen als"-Funktion laesst Sie jeden Newsletter durch die Augen eines bestimmten Kunden betrachten.
+Sie moechten ein personalisiertes Angebot senden, aber starren auf den Liquid-Code und fragen sich, welche Klammer fehlt. Mit unseren ueberarbeiteten Produktfeeds gehoert dieses Problem der Vergangenheit an. Fuegen Sie im Handumdrehen dynamische Inhalte zu Ihren E-Mails hinzu, basierend auf dem tatsaechlichen Kundenverhalten - zuerst bestellt, zuletzt bestellt, alle Bestellungen oder Cross-Sell-Produkte. Das System folgt einer intelligenten Fallback-Kette fuer Cross-Sell: zuerst Bestellhistorie, dann Warenkorb, dann Ihr eigener Fallback. Sie richten es einmal ein, das System erledigt den Rest.
 
 ### <SparkleIcon /> Verbesserungen
 
 - Dynamische Produktfeeds mit Unterstuetzung fuer zuerst, zuletzt, alle bestellten und Cross-Sell-Produkte
 - Intelligente Cross-Sell-Fallback-Kette: Bestellhistorie, dann Warenkorb, dann Ihr eigener Fallback
+- Waehlen Sie die Anzahl der Produkte pro Feed
+- Zu finden unter Inhalt > Produktfeeds
+
+---
+
+## Automatische Bildskalierung {{ date: '2026-01-12T00:00Z' }}
+
+Nie wieder inkonsistente Bildgroessen in Ihren E-Mails. Reloadify skaliert Ihre `main_images` jetzt automatisch fuer ein sauberes, einheitliches Erscheinungsbild in jedem Posteingang. Moechten Sie bestimmte Abmessungen? Sie koennen auch benutzerdefinierte Groessen per Liquid-Code festlegen.
+
+### <SparkleIcon /> Verbesserungen
+
 - Automatische `main_image`-Skalierung fuer einheitliche E-Mail-Layouts in allen Posteingaengen
 - Benutzerdefinierte Bildabmessungen per Liquid: `main_image | resize: 600, 300`
+- Professionelles Erscheinungsbild in jedem Posteingang ohne komplexen Code
+
+---
+
+## Segment-Einblicke pro Profil {{ date: '2026-01-12T00:00Z' }}
+
+Moechten Sie schnell verstehen, warum ein Kunde eine bestimmte E-Mail erhaelt? Sie sehen jetzt direkt auf der Profilseite, zu welchen Segmenten ein Profil gehoert. Kein Suchen mehr in verschiedenen Listen - alle relevanten Daten zentral an einem Ort. Dies hilft Ihnen, Ihr 360-Grad-Kundenbild noch besser zu verstehen.
+
+### <SparkleIcon /> Verbesserungen
+
 - Segmentzugehoerigkeit jetzt direkt auf der Kundenprofilseite sichtbar
-- "Testen als"-Funktionalitaet: Newsletter als bestimmter Kunde ansehen durch Eingabe der E-Mail-Adresse
+- Zentralisierte Ansicht aller Segmentdaten pro Kunde
+- Besseres Verstaendnis Ihres 360-Grad-Kundenbilds
+
+---
+
+## "Testen als"-Funktionalitaet {{ date: '2026-01-12T00:00Z' }}
+
+Sie moechten sicher sein, dass Ihre personalisierte Nachricht perfekt ankommt. Mit der neuen "Testen als"-Funktion koennen Sie jeden Newsletter durch die Augen eines bestimmten Kunden betrachten. Geben Sie einfach die E-Mail-Adresse des Kunden bei der Testmail ein und erleben Sie genau, was dieser sehen wird.
+
+### <SparkleIcon /> Verbesserungen
+
+- Newsletter als bestimmter Kunde ansehen durch Eingabe der E-Mail-Adresse
+- Sehen Sie genau, wie personalisierte Inhalte fuer einzelne Kunden dargestellt werden
+- Erkennen Sie Personalisierungsprobleme, bevor Sie an Ihre gesamte Zielgruppe senden
 
 ---
 
@@ -59,12 +93,25 @@ Wir stellen vor: Reloadify Loyalty - bauen Sie Ihr eigenes Treueprogramm, das pe
 
 ---
 
-## Shopify-Integration & RFM-Analyse {{ date: '2023-02-28T00:00Z' }}
+## Shopify-Integration {{ date: '2023-02-28T00:00Z' }}
 
-Zwei grosse Erweiterungen der Plattform. Reloadify integriert sich jetzt direkt mit Shopify, sodass Sie Ihren Shopify-Shop einfach verbinden und sofort alle Retention-Marketing-Funktionen nutzen koennen. Ausserdem haben wir die RFM-Analyse eingefuehrt - eine leistungsstarke Methode zur Kundensegmentierung basierend auf Recency, Frequency und Monetary Value, die Ihnen tiefere Einblicke in das Kundenverhalten ermoeglicht und smartere, gezieltere Kampagnen erleichtert.
+Reloadify integriert sich jetzt direkt mit Shopify, sodass Sie Ihren Shopify-Shop einfach verbinden und sofort alle Retention-Marketing-Funktionen nutzen koennen. Verbinden Sie Ihren Shop in wenigen Minuten und nutzen Sie die volle Kraft von automatisiertem E-Mail-Marketing, Segmentierung und Personalisierung fuer Ihren Shopify-Shop.
 
 ### <SparkleIcon /> Verbesserungen
 
 - Native Shopify-Integration fuer nahtlose Shop-Verbindung
+- Zugang zu allen Reloadify Retention-Marketing-Funktionen fuer Ihren Shopify-Shop
+- Schneller und einfacher Einrichtungsprozess
+
+---
+
+## RFM-Analyse {{ date: '2023-02-28T00:00Z' }}
+
+Eine leistungsstarke neue Methode zur Kundensegmentierung basierend auf Recency, Frequency und Monetary Value. Die RFM-Analyse gibt Ihnen tiefere Einblicke in das Kundenverhalten, hilft Ihnen Ihre wertvollsten Kunden zu identifizieren, gefaehrdete Kunden zu erkennen und smartere, gezieltere Kampagnen zu erstellen.
+
+### <SparkleIcon /> Verbesserungen
+
 - RFM-Analyse fuer datengetriebene Kundensegmentierung
 - Segmentieren Sie Kunden nach Aktualitaet, Haeufigkeit und monetaerem Wert
+- Identifizieren Sie wertvolle Kunden und Risikosegmente
+- Erstellen Sie smartere, gezieltere Retention-Kampagnen

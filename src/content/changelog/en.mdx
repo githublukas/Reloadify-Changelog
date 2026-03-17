@@ -30,18 +30,52 @@ Previously, once you sent a newsletter the only indication was a brief popup and
 
 ---
 
-## Dynamic product feeds, image resizing & more {{ date: '2026-01-12T00:00Z' }}
+## Dynamic product feeds {{ date: '2026-01-12T00:00Z' }}
 
-A packed update to start the new year. Dynamic product feeds let you add personalized content to your emails based on actual customer behavior - first ordered, last ordered, all ordered, or cross-sell products. No more fiddling with liquid code. On top of that, product images now resize automatically for a consistent look in every inbox, you can see segment memberships directly on each profile page, and the new "Test as" feature lets you preview any newsletter through the eyes of a specific customer.
+You want to send a personalized offer, but you're staring at liquid code trying to figure out which bracket is missing. With our revamped product feeds, that struggle is over. Add dynamic content to your emails based on actual customer behavior - first ordered, last ordered, all ordered, or cross-sell products. The system follows a smart fallback chain for cross-sell: order history first, then cart contents, then your custom fallback. You set it up once, the system does the rest.
 
 ### <SparkleIcon /> Improvements
 
 - Dynamic product feeds with support for first, last, all ordered, and cross-sell products
 - Smart cross-sell fallback chain: order history, then cart, then your custom fallback
+- Choose the number of products to display per feed
+- Find it under Content > Product feeds
+
+---
+
+## Automatic image resizing {{ date: '2026-01-12T00:00Z' }}
+
+No more inconsistent image sizes in your emails. Reloadify now automatically resizes your `main_images` to ensure a clean, uniform look in every inbox. Want specific dimensions? You can also set custom sizes using liquid code.
+
+### <SparkleIcon /> Improvements
+
 - Automatic `main_image` resizing for consistent email layouts across all inboxes
 - Custom image dimensions via liquid: `main_image | resize: 600, 300`
+- Professional look in every inbox without writing a single line of complex code
+
+---
+
+## Segment insights per profile {{ date: '2026-01-12T00:00Z' }}
+
+Want to quickly understand why a customer receives a specific email? You can now see directly on the profile page which segments a profile belongs to. No more searching through different lists - all relevant data centralized in one place. This helps you better understand your 360-degree customer view.
+
+### <SparkleIcon /> Improvements
+
 - Segment membership now visible directly on customer profile pages
-- "Test as" functionality: preview newsletters as a specific customer by entering their email
+- Centralized view of all segment data per customer
+- Better understanding of your 360-degree customer view
+
+---
+
+## "Test as" functionality {{ date: '2026-01-12T00:00Z' }}
+
+You want to be sure your personalized message arrives perfectly. With the new "Test as" feature, you can preview any newsletter through the eyes of a specific customer. Simply enter the customer's email address when sending a test mail and experience exactly what they will see.
+
+### <SparkleIcon /> Improvements
+
+- Preview newsletters as a specific customer by entering their email address
+- See exactly how personalized content renders for individual customers
+- Catch personalization issues before sending to your full audience
 
 ---
 
@@ -59,12 +93,25 @@ Introducing Reloadify Loyalty - build your own loyalty program that fits your br
 
 ---
 
-## Shopify integration & RFM Analysis {{ date: '2023-02-28T00:00Z' }}
+## Shopify integration {{ date: '2023-02-28T00:00Z' }}
 
-Two major additions to the platform. Reloadify now integrates directly with Shopify, making it easy to connect your Shopify store and start using all retention marketing features right away. We also launched RFM Analysis - a powerful way to segment your customers based on Recency, Frequency, and Monetary value, giving you deeper insight into customer behavior and enabling smarter, more targeted campaigns.
+Reloadify now integrates directly with Shopify, making it easy to connect your Shopify store and start using all retention marketing features right away. Connect your store in minutes and unlock the full power of automated email marketing, segmentation, and personalization for your Shopify shop.
 
 ### <SparkleIcon /> Improvements
 
 - Native Shopify integration for seamless store connection
+- Access all Reloadify retention marketing features for your Shopify shop
+- Quick and easy setup process
+
+---
+
+## RFM Analysis {{ date: '2023-02-28T00:00Z' }}
+
+A powerful new way to segment your customers based on Recency, Frequency, and Monetary value. RFM Analysis gives you deeper insight into customer behavior, helping you identify your most valuable customers, spot those at risk of churning, and create smarter, more targeted campaigns.
+
+### <SparkleIcon /> Improvements
+
 - RFM Analysis for data-driven customer segmentation
 - Segment customers by recency, frequency, and monetary value
+- Identify high-value customers and at-risk segments
+- Enable smarter, more targeted retention campaigns
