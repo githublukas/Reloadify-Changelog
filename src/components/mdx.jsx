@@ -11,13 +11,14 @@ export const a = Link
 
 export const img = function Img(props) {
   return (
-    <div className="relative overflow-hidden rounded-xl bg-gray-50 dark:bg-gray-900">
-      <Image
-        alt=""
-        sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 45vw, (min-width: 640px) 32rem, 95vw"
-        {...props}
-      />
-      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset dark:ring-white/10" />
+    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-100 via-sky-100 to-teal-50 p-6 dark:from-teal-900/40 dark:via-gray-900 dark:to-gray-900 sm:p-8">
+      <div className="relative overflow-hidden rounded-lg shadow-2xl ring-1 ring-gray-900/10 dark:ring-white/10">
+        <Image
+          alt=""
+          sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 45vw, (min-width: 640px) 32rem, 95vw"
+          {...props}
+        />
+      </div>
     </div>
   )
 }
