@@ -1,0 +1,27 @@
+{
+  "intro": {
+    "heading": "Changelog",
+    "description": "Bleiben Sie auf dem Laufenden mit den neuesten Funktionen, Verbesserungen und Updates von Reloadify - der agentischen Retentionsplattform fur E-Commerce."
+  },
+  "signup": {
+    "placeholder": "E-Mail-Adresse",
+    "button": "Updates erhalten"
+  },
+  "nav": {
+    "documentation": "Dokumentation",
+    "github": "GitHub",
+    "rss": "RSS"
+  },
+  "footer": {
+    "poweredBy": "Bereitgestellt von"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden.",
+    "backHome": "Zuruck zur Startseite"
+  },
+  "theme": {
+    "switchTo": "Wechseln zu",
+    "theme": "Thema"
+  }
+}

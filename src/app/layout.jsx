@@ -2,8 +2,6 @@ import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 
-import { Providers } from '@/app/providers'
-
 import '@/styles/tailwind.css'
 
 const inter = Inter({
@@ -19,26 +17,14 @@ const monaSans = localFont({
   weight: '200 900',
 })
 
-export const metadata = {
-  title: "Reloadify Changelog - What’s new",
-  description:
-    "Stay up to date with the latest features, improvements, and updates to Reloadify - the agentic retention platform for e-commerce.",
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-    },
-  },
-}
-
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
       className={clsx('h-full antialiased', inter.variable, monaSans.variable)}
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col bg-white dark:bg-teal-950">
-        <Providers>{children}</Providers>
+        {children}
       </body>
     </html>
   )

@@ -1,0 +1,27 @@
+{
+  "intro": {
+    "heading": "Changelog",
+    "description": "Blijf op de hoogte van de nieuwste functies, verbeteringen en updates van Reloadify - het agentische retentieplatform voor e-commerce."
+  },
+  "signup": {
+    "placeholder": "E-mailadres",
+    "button": "Ontvang updates"
+  },
+  "nav": {
+    "documentation": "Documentatie",
+    "github": "GitHub",
+    "rss": "RSS"
+  },
+  "footer": {
+    "poweredBy": "Mogelijk gemaakt door"
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "description": "Sorry, we konden de pagina die je zoekt niet vinden.",
+    "backHome": "Terug naar home"
+  },
+  "theme": {
+    "switchTo": "Schakel naar",
+    "theme": "thema"
+  }
+}

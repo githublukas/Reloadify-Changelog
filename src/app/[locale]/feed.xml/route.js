@@ -10,13 +10,13 @@ export async function GET(req) {
   }
 
   let author = {
-    name: 'Joe Davola',
-    email: 'crazy.joe@example.com',
+    name: 'Reloadify',
+    email: 'info@reloadify.com',
   }
 
   let feed = new Feed({
-    title: 'Commit',
-    description: 'Open-source Git client for macOS minimalists',
+    title: 'Reloadify Changelog',
+    description: 'Latest features, improvements, and updates to Reloadify',
     author,
     id: siteUrl,
     link: siteUrl,

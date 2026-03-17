@@ -1,6 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 
 import { IconLink } from '@/components/IconLink'
+import { LanguageSwitcher } from '@/components/LanguageSwitcher'
+import { useLocale } from '@/components/LocaleProvider'
 import { Logo } from '@/components/Logo'
 import { SignUpForm } from '@/components/SignUpForm'
 
@@ -32,39 +36,35 @@ function FeedIcon(props) {
   )
 }
 
-function XIcon(props) {
-  return (
-    <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
-      <path d="M9.51762 6.77491L15.3459 0H13.9648L8.90409 5.88256L4.86212 0H0.200195L6.31244 8.89547L0.200195 16H1.58139L6.92562 9.78782L11.1942 16H15.8562L9.51728 6.77491H9.51762ZM7.62588 8.97384L7.00658 8.08805L2.07905 1.03974H4.20049L8.17706 6.72795L8.79636 7.61374L13.9654 15.0075H11.844L7.62588 8.97418V8.97384Z" />
-    </svg>
-  )
-}
-
 export function Intro() {
+  let { locale, dictionary: dict } = useLocale()
+
   return (
     <>
-      <div>
-        <Link href="/">
+      <div className="flex items-center justify-between">
+        <Link href={`/${locale}`}>
           <Logo className="inline-block h-10 w-auto text-lime-300" />
         </Link>
+        <LanguageSwitcher />
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
-        Changelog
+        {dict.intro.heading}
       </h1>
-      <p className="mt-4 text-sm/6 text-gray-300">
-        Stay up to date with the latest features, improvements, and updates
-        to Reloadify - the agentic retention platform for e-commerce.
-      </p>
+      <p className="mt-4 text-sm/6 text-gray-300">{dict.intro.description}</p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
         <IconLink href="#" icon={BookIcon} className="flex-none">
-          Documentation
+          {dict.nav.documentation}
         </IconLink>
         <IconLink href="#" icon={GitHubIcon} className="flex-none">
-          GitHub
+          {dict.nav.github}
         </IconLink>
-        <IconLink href="/feed.xml" icon={FeedIcon} className="flex-none">
-          RSS
+        <IconLink
+          href={`/${locale}/feed.xml`}
+          icon={FeedIcon}
+          className="flex-none"
+        >
+          {dict.nav.rss}
         </IconLink>
       </div>
     </>
@@ -72,9 +72,11 @@ export function Intro() {
 }
 
 export function IntroFooter() {
+  let { dictionary: dict } = useLocale()
+
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-      Powered by{' '}
+      {dict.footer.poweredBy}{' '}
       <IconLink href="https://www.reloadify.com" compact>
         Reloadify
       </IconLink>
