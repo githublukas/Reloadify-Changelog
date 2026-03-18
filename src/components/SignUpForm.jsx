@@ -21,13 +21,13 @@ export function SignUpForm() {
         name="email"
         id={id}
         placeholder={dict.signup.placeholder}
-        className="peer w-0 flex-auto bg-transparent px-4 py-2.5 text-base text-white placeholder:text-gray-500 focus:outline-hidden sm:text-[0.8125rem]/6"
+        className="peer w-0 flex-auto bg-transparent px-4 py-2.5 text-base text-gray-900 placeholder:text-gray-400 focus:outline-hidden dark:text-white dark:placeholder:text-gray-500 sm:text-[0.8125rem]/6"
       />
       <Button type="submit" arrow>
         {dict.signup.button}
       </Button>
-      <div className="absolute inset-0 -z-10 rounded-lg transition peer-focus:ring-4 peer-focus:ring-lime-300/15" />
-      <div className="absolute inset-0 -z-10 rounded-lg bg-white/2.5 ring-1 ring-white/15 transition peer-focus:ring-lime-300" />
+      <div className="absolute inset-0 -z-10 rounded-lg transition peer-focus:ring-4 peer-focus:ring-teal-500/15 dark:peer-focus:ring-lime-300/15" />
+      <div className="absolute inset-0 -z-10 rounded-lg bg-gray-900/5 ring-1 ring-gray-900/10 transition peer-focus:ring-teal-500 dark:bg-white/2.5 dark:ring-white/15 dark:peer-focus:ring-lime-300" />
     </form>
   )
 }

@@ -14,7 +14,7 @@ function ButtonInner({ arrow = false, children }) {
 export function Button({ className, arrow, children, ...props }) {
   className = clsx(
     className,
-    'group relative isolate flex-none rounded-md py-1.5 text-[0.8125rem]/6 font-semibold text-white',
+    'group relative isolate flex-none rounded-md bg-teal-600 py-1.5 text-[0.8125rem]/6 font-semibold text-white dark:bg-transparent',
     arrow ? 'pl-2.5 pr-[calc(9/16*1rem)]' : 'px-2.5',
   )
 

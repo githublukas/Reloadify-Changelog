@@ -43,30 +43,15 @@ export function Intro() {
     <>
       <div className="flex items-center justify-between">
         <Link href={`/${locale}`}>
-          <Logo className="inline-block h-10 w-auto text-lime-300" />
+          <Logo className="inline-block h-10 w-auto text-black dark:text-lime-300" />
         </Link>
         <LanguageSwitcher />
       </div>
-      <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
+      <h1 className="mt-14 font-display text-4xl/tight font-light text-gray-900 dark:text-white">
         {dict.intro.heading}
       </h1>
-      <p className="mt-4 text-sm/6 text-gray-300">{dict.intro.description}</p>
-      <SignUpForm />
-      <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={BookIcon} className="flex-none">
-          {dict.nav.documentation}
-        </IconLink>
-        <IconLink href="#" icon={GitHubIcon} className="flex-none">
-          {dict.nav.github}
-        </IconLink>
-        <IconLink
-          href={`/${locale}/feed.xml`}
-          icon={FeedIcon}
-          className="flex-none"
-        >
-          {dict.nav.rss}
-        </IconLink>
-      </div>
+      <p className="mt-4 text-sm/6 text-gray-600 dark:text-gray-300">{dict.intro.description}</p>
+      {/* <SignUpForm /> */}
     </>
   )
 }
